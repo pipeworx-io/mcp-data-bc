@@ -1,0 +1,33 @@
+{
+  "name": "@pipeworx/mcp-data-bc",
+  "version": "0.1.0",
+  "description": "DataBC MCP: British Columbia provincial open-data catalogue (CKAN).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "mcp-data-bc": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-bc"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-data-bc.git"
+  },
+  "mcpName": "io.github.pipeworx-io/data-bc",
+  "pipeworx": {
+    "mode": "gateway",
+    "slug": "data-bc",
+    "gatewaySlug": "data-bc",
+    "sourceHash": "v1-23c98223afab956f6af5a0b75c6bd7a2c9f2ede34f212cb34a4b840afc135d45",
+    "sourceCommit": "6f1ec9c23dbf3cbd7fef76bd342bcfbdb8239433"
+  }
+}
